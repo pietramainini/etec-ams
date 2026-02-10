@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    display: block;
+}
+
+#jogador {
+    position: absolute;
+    width: 58px;
+    height: 45px;
+    top: 50%;
+    left: 50%;
+}
+
+#canvas {
+    /* background-color: black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1756144846 source:c:\users\114539645\desktop\tpa-ams\c\dowhile\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+

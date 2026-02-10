@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1757956031 source:c:\users\114539645\desktop\tpa-ams\c\avaliação\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<locale.h>
+	<ctype.h>
+

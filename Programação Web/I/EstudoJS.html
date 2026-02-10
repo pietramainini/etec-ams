@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+    <h1>
+        JavaScript
+    </h1>
+
+    <button onclick="Somar()">
+        Somar!
+    </button>
+    <button onclick="Sub()">
+        Subtrair!
+    </button>
+    <button onclick="Div()">
+        Dividir!
+    </button>
+    <button onclick="Multi()">
+        Multiplicar!
+    </button>
+
+    <br><br>
+    
+    <script>
+        
+    for (let i = 0; i < 10; i++) {
+        
+        document.write(`For ${i}` + "<br>")
+    }
+
+    let i = 0
+    while(i < 10) {
+        document.write(`While ${i}` + "<br>")
+        i++
+    }
+
+    function Somar() {
+        let a = Number(prompt("Digite um número"))
+        let b = Number(prompt("Digite outro número"))
+        let c = a + b
+        alert(`A soma de ${a} + ${b} é igual a ${c}`)
+    }
+
+    function Sub() {
+        let a = Number(prompt("Digite um número"))
+        let b = Number(prompt("Digite outro número"))
+        let c = a - b
+        alert(`A diferença de ${a} - ${b} é igual a ${c}`)
+    }
+
+    function Div() {
+        let a = Number(prompt("Digite um número"))
+        let b = Number(prompt("Digite outro número"))
+        let c = a / b
+        alert(`A divisão de ${a} / ${b} é igual a ${c}`)
+    }
+
+    function Multi() {
+        let a = Number(prompt("Digite um número"))
+        let b = Number(prompt("Digite outro número"))
+        let c = a * b
+        alert(`O produto de ${a} x ${b} é igual a ${c}`)
+    }
+
+
+    </script>
+</body>
+</html>

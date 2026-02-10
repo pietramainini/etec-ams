@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1760379630 source:c:\users\114539645\desktop\tpa-ams\c\13.10\main.c
+	<stdio.h>
+	<locale.h>
+

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Notícias</title>
+    <link rel="stylesheet" href="./css/site.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">E</div>
+                    <span class="logo-text">Etec</span>
+                </div>
+                
+                <div class="search-bar">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" placeholder="Pesquisar na Web" class="search-input">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-category="destaques">Destaques</button>
+                <button class="nav-tab" data-category="noticias">Notícias</button>
+                <button class="nav-tab" data-category="esportes">Esportes</button>
+                <button class="nav-tab" data-category="saude">Saúde</button>
+                <button class="nav-tab" data-category="clima">Clima</button>
+                <button class="nav-tab" data-category="videos">Vídeos</button>
+                <button class="nav-tab" data-category="compras">Compras</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Principal -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Coluna Esquerda -->
+                <div class="left-column">
+                    <!-- Hero Carousel -->
+                    <section class="hero-carousel">
+                        <div class="carousel-container">
+                            <div class="carousel-slide active">
+                                <img src="" alt="Imposto de Renda">
+                                <div class="carousel-overlay"></div>
+                                <div class="carousel-content">
+                                    <span class="category-badge">ECONOMIA</span>
+                                    <h2>Imposto de Renda Mínimo começa a ser cobrado em janeiro de 2026</h2>
+                                    <p>Veja quem precisa pagar e como funciona a nova regra</p>
+                                    <p class="timestamp">2h atrás</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="" alt="Tecnologia">
+                                <div class="carousel-overlay"></div>
+                                <div class="carousel-content">
+                                    <span class="category-badge">TECNOLOGIA</span>
+                                    <h2>Tecnologia revoluciona o mercado de trabalho</h2>
+                                    <p>Inteligência Artificial cria novas oportunidades profissionais</p>
+                                    <p class="timestamp">4h atrás</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="" alt="Negócios">
+                                <div class="carousel-overlay"></div>
+                                <div class="carousel-content">
+                                    <span class="category-badge">NEGÓCIOS</span>
+                                    <h2>Negócios globais conectam o mundo</h2>
+                                    <p>Entenda como a economia internacional se move</p>
+                                    <p class="timestamp">6h atrás</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-btn prev" id="prevBtn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <button class="carousel-btn next" id="nextBtn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                        <div class="carousel-dots" id="carouselDots"></div>
+                    </section>
+
+                    <section class="news-section">
+                        <h2>Mais Notícias</h2>
+                        <div class="news-grid" id="newsGrid"></div>
+                        <div class="load-more">
+                            <button class="load-more-btn">Carregar mais notícias</button>
+                        </div>
+                    </section>
+                </div>
+                
+                
+
+                <!-- Coluna a direita -->
+                <aside class="sidebar">
+                    <div class="promo-banner yellow">
+                        <h3>BLACK</h3>
+                        <h4>WEEK</h4>
+                        <div class="promo-badges">
+                            <span>5%</span>
+                            <span>10%</span>
+                        </div>
+                        <button class="promo-btn dark">Comprar agora</button>
+                    </div>
+
+                    <!-- Ações em alta -->
+                    <div class="widget">
+                        <h3>Sugestões dos Favoritos</h3>
+                        <div class="stock-list" id="stockList"></div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Sobre</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Publicidade</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Segurança</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Seguir</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Etec. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/site.js"></script>
+</body>
+</html>
